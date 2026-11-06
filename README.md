@@ -1,8 +1,10 @@
 # Backend Engineering from First Principles
 
-A 31-post series that follows an online bookstore from its first HTTP request to a service you can test, deploy, and operate.
+I set aside an evening to brush up on HTTP for a backend developer interview. By the end of it, I had a plan for 31 posts and a fictional bookstore. The bookstore, at least, has the good sense to start with one book.
 
-Start with [Post 1 — The Roadmap](01-the-roadmap.md). The remaining entries are planned topics. Links will be added as articles are published.
+We’ll follow the store from its first HTTP request to a service we can test, deploy, and operate. Along the way, two customers will try to buy the last copy, an email will fail at an inconvenient moment, and we’ll find out how much work the **Place order** button has been taking credit for.
+
+Start with [Post 1 — The Roadmap](01-the-roadmap.md). I’ll link each new post in the index below as it goes live.
 
 | Post | Topic |
 | --- | --- |
