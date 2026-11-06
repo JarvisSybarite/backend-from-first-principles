@@ -2,13 +2,13 @@
 
 *Post 1 of 31 · [Series index](README.md)*
 
-I’m brushing up on backend fundamentals for an entry-level developer interview. I wanted a way to check whether I could explain what happens after someone clicks a button, where a request can fail, and how I’d figure out what went wrong.
+I’m brushing up on backend fundamentals for an entry-level developer interview. My plan was to spend an evening reviewing HTTP. I now have a table of contents for 31 blog posts. The evening is going well, provided we’re flexible about what it was for.
 
-Imagine buying the last copy of a book online. You click **Place order** at almost exactly the same time as another customer. Both requests reach the store, both customers have valid accounts, and there’s only one copy left.
+There’s a good reason to write things down. I can read an explanation of database transactions, nod at the right moments, and come away feeling that I understand them. Ask me what happens when two people try to buy the last copy of a book, though, and I suddenly have several questions about the bookstore.
 
-Which order goes through? What does the other customer see? If the winning customer’s confirmation email fails to send, should their order fail too?
+Suppose both customers click **Place order** at the same time. Both requests see one copy in stock. Which order goes through? What does the other customer see? And if the confirmation email fails, have we sold a book or merely had a difficult afternoon?
 
-A small checkout button hides a surprising number of engineering decisions. This series follows those decisions, from the moment a request leaves the browser to the work of deploying and operating the service that handles it. The series is based on Sriniously’s [roadmap video](https://www.youtube.com/watch?v=0Rwb4Xmlcwc), with a bookstore as our running example.
+I’m using Sriniously’s [Backend from First Principles roadmap](https://www.youtube.com/watch?v=0Rwb4Xmlcwc) to work through those questions. This post is the roadmap. In the next one, I’ll follow a single request from the browser to the database and back. One request seems manageable, which is also what I thought about reviewing HTTP.
 
 ## Follow one request
 
