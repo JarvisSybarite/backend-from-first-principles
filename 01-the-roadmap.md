@@ -10,6 +10,20 @@ Suppose both customers click **Place order** at the same time. Both requests see
 
 I’m using Sriniously’s [Backend from First Principles roadmap](https://www.youtube.com/watch?v=0Rwb4Xmlcwc) to work through those questions. This post is the roadmap. In the next one, I’ll follow a single request from the browser to the database and back. One request seems manageable, which is also what I thought about reviewing HTTP.
 
+## What happens after you click Place order?
+
+```mermaid
+flowchart TD
+    Browser[Customer browser] -->|Place order| API[Bookstore API]
+    API -->|Save order and update stock| DB[(Database)]
+    API -->|Return order confirmation| Browser
+    API -->|Queue receipt after saving the order| Queue[Job queue]
+    Queue --> Worker[Background worker]
+    Worker -->|Send receipt| Email[Email provider]
+```
+
+The database records the order. A background worker sends the receipt, so the checkout response can return while the email is still on its way.
+
 ## Follow one request
 
 A framework can route a request, parse JSON, or open a database connection in a few lines of code. When something breaks, you need to know which of those steps failed. A browser that sends the wrong HTTP method, a server that rejects a malformed body, and a database that times out can all leave a customer staring at the same error screen.
