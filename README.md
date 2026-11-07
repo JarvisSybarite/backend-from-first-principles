@@ -9,7 +9,7 @@ Start with [Post 1 — The Roadmap](01-the-roadmap.md). I’ll link each new pos
 | Post | Topic |
 | --- | --- |
 | 01 | [The roadmap](01-the-roadmap.md) |
-| 02 | How a backend works |
+| 02 | [How a backend works](02-how-a-backend-works.md) |
 | 03 | HTTP |
 | 04 | Routing |
 | 05 | Serialization and deserialization |
