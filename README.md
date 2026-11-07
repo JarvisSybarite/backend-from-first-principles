@@ -10,11 +10,11 @@ Start with [Post 1 — The Roadmap](01-the-roadmap.md). I’ll link each new pos
 | --- | --- |
 | 01 | [The roadmap](01-the-roadmap.md) |
 | 02 | [How a backend works](02-how-a-backend-works.md) |
-| 03 | HTTP |
-| 04 | Routing |
-| 05 | Serialization and deserialization |
-| 06 | Authentication and authorization |
-| 07 | Validation and transformation |
+| 03 | [HTTP](03-http.md) |
+| 04 | [Routing](04-routing.md) |
+| 05 | [Serialization and deserialization](05-serialization-and-deserialization.md) |
+| 06 | [Authentication and authorization](06-authentication-and-authorization.md) |
+| 07 | [Validation and transformation](07-validation-and-transformation.md) |
 | 08 | Middleware |
 | 09 | Request context |
 | 10 | Handlers and controllers |

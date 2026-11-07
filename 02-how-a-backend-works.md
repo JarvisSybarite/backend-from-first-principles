@@ -107,4 +107,4 @@ Next, we’ll examine HTTP itself, so the request and response become messages w
 - [MDN — Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS)
 - [node-postgres — Connection pooling](https://node-postgres.com/features/pooling)
 
-[Previous — The Roadmap](01-the-roadmap.md) · [Series index](README.md)
+[Previous — The Roadmap](01-the-roadmap.md) · [Next — HTTP](03-http.md) · [Series index](README.md)
